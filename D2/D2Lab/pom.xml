@@ -9,11 +9,6 @@
   <name>D2Lab</name>
   <url>http://maven.apache.org</url>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <mainClass>com.example.App</mainClass>
-  </properties>
-
   <build>
     <plugins>
       <plugin>
@@ -24,9 +19,20 @@
           <release>17</release>
         </configuration>
       </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.1.1</version>
+        <configuration>
+          <mainClass>gov.iti.jets.App</mainClass>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
 
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
 
   <dependencies>
     <!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
