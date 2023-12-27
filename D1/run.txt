@@ -1,0 +1,8 @@
+- Compile :
+javac -cp ".;mysql-connector-j-8.2.0.jar" Main.java
+
+- run :
+java -cp ".;mysql-connector-j-8.2.0.jar" Main
+
+- Create Jar :
+jar cvfm App.jar Manifest.txt
